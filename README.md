@@ -15,7 +15,7 @@ Este proyecto es una aplicación web para la gestión de tareas, desarrollada co
 
 ## Descripción
 
-Está aplicación a sido diseñada como un demo con el objetivo de que puedan evaluar mis habilidades de parte de Lem Systems, fue creado para ser facil de lanzar y revisar. Se utilizó la arquitectura MVC clásica de Laravel con templates Blade.
+Está aplicación ha sido diseñada como un demo, con el objetivo de que puedan evaluar mis habilidades de parte de Lem Systems, fue creado para ser facil de iniciar y revisar. Se utilizó la arquitectura MVC clásica de Laravel con templates Blade.
 
 Se ha adjuntado el archivo .env para facilidad de instalación.
 
@@ -23,7 +23,7 @@ Se ha adjuntado el archivo .env para facilidad de instalación.
 ## Requisitos
 
 - **Docker:** [https://www.docker.com/](https://www.docker.com/).
-- **Laravel:** [https://getcomposer.org/](https://getcomposer.org/).
+- **Laravel:** [https://laravel.com/](https://laravel.com/).
 - **npm:** [https://nodejs.org/](https://nodejs.org/).
 
 ## Instalación
@@ -41,7 +41,7 @@ Se ha adjuntado el archivo .env para facilidad de instalación.
     ```
 3. Crear la base de datos: 
    ```bash
-    docker compose up
+    docker compose up --build -d
     ```
     Existe la posibilidad de que exista un problema con volumenes anteriores si ha usado una base de datos mariadb con anterioridad en su sistema usando docker. si tiene algún
     problema, lo mejor es desmontar el volumen y repetir el comando anterior.
@@ -107,7 +107,7 @@ Se agrego un componente simple de pruebas para las tareas. Con pruebas unitarias
 
 En caso de tener problemas para crear la base de datos con docker compose, aquí están las caracteristicas de la Base de datos utilizada en el proyecto. 
 
-DB_CONNECTION=mariadb
+DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=task
@@ -123,5 +123,7 @@ DB_PASSWORD=password
 -   MariaDB
 -   Blade Templates
 
-# task-managment
 # task-management
+
+Este proyecto ha sido realizado con mucho cariño, en caso de tener algún problema para análizarlo o querer hacer consultas no duden en contactarme. 
+correo: pedropablolopezmena@gmail.com
