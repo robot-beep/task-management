@@ -31,7 +31,7 @@ Se ha adjuntado el archivo .env para facilidad de instalación.
 1.  Clona este repositorio:
 
     ```bash
-    git clone https://github.com/robot-beep/task-managment.git
+    git clone https://github.com/robot-beep/task-management.git
     ```
 
 2.  Accede al directorio del proyecto:
@@ -42,6 +42,12 @@ Se ha adjuntado el archivo .env para facilidad de instalación.
 3. Crear la base de datos: 
    ```bash
     docker compose up
+    ```
+    Existe la posibilidad de que exista un problema con volumenes anteriores si ha usado una base de datos mariadb con anterioridad en su sistema usando docker. si tiene algún
+    problema, lo mejor es desmontar el volumen y repetir el comando anterior.
+
+   ```bash
+    docker compose down -v 
     ```
 
 4. Instala las dependencias de Laravel:
