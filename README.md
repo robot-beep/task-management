@@ -37,7 +37,7 @@ Se ha adjuntado el archivo .env para facilidad de instalación.
 2.  Accede al directorio del proyecto:
 
     ```bash
-    cd task-managment
+    cd task-management
     ```
 3. Crear la base de datos: 
    ```bash
